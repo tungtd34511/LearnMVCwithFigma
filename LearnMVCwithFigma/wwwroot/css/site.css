@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
 html {
   font-size: 14px;
 }
@@ -12,7 +17,243 @@ html {
   position: relative;
   min-height: 100%;
 }
-
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: #F5F5F5;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #2563EB;
+    cursor: pointer;
+}
+
+input[type="password"] {
+    -webkit-text-security: disc;
+}
+h1 {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -2px;
+}
+.container {
+    width: 1600px;
+    height: 1067px;
+    background: #0F172A;
+    position: relative;
+}
+.container-img {
+    position: absolute;
+    width: 570px;
+    height: 787px;
+    left: 191px;
+    top: 130px;
+    overflow: hidden;
+    background: #404040;
+    border-radius: 20px;
+}
+.img-25 {
+    position: absolute;
+    left: -39px;
+    top: -22px;
+    width: 720px;
+    height: 981px;
+    background: url(../img/f0e61184f4227402b8936b0702f90d20.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.content {
+    position: absolute;
+    width: 449px;
+    height: 787px;
+    left: 898px;
+    top: 130px;
+}
+
+.input-content {
+    width: 449px;
+    height: 497px;
+}
+.create-account {
+
+    display: flex;
+    align-items: center;
+    /* blue-gray/500 */
+
+    color: #64748B;
+}
+
+.pl-5{
+    padding-left: 5px;
+}
+.btn {
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 13.5px 37.5px 13.5px 37.5px;
+    color: #FFFFFF;
+}
+.btn-primary {
+    background: #2563EB;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+.btn-info {
+    background: #1E293B;
+    border-radius: 35px;
+    padding: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+.mt-19 {
+    margin-top: 19px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-49 {
+    margin-bottom: 49px;
+}
+.w-100{
+    width: 100%!important;
+}
+.form-control {
+    border: none;
+    border-radius: 50px;
+    letter-spacing: -0.2px;
+}
+.form-check-group {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-input {
+    width: 100%;
+    padding: 17px 22px 17px 22px;
+    background: #0F172A;
+    border: 1px solid #334155;
+    color: #94A3B8;
+}
+    .form-input:focus-visible {
+        background: #FFFFFF;
+        color: #0F172A;
+        outline: none;
+        border: 1px solid #334155;
+    }
+.form-group .form-input {
+    margin-top: 10px;
+}
+/* Hide the browser's default checkbox */
+    .form-check-group input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    background: #0F172A;
+    border: 1px solid #334155;
+    border-radius: 5px;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.form-check-group input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check-group input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check-group .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.d-flex{
+    display: flex;
+}
+.flex-middle{
+    align-items: center!important;
+    justify-content: center!important
+}
+.svg-icon {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important
+}
+.btn-signup-google {
+    width: 190px;
+    height: 28px;
+    /* Bold/16px */
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+    align-items: center;
+    text-align: right;
+    letter-spacing: -0.2px;
+}
+.content-sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    /* blue-gray/400 */
+
+    color: #94A3B8;
 }
